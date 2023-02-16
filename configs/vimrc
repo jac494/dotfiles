@@ -1,0 +1,162 @@
+" INDENTATION
+" new lines inherit previous indentation
+set autoindent
+
+" convert tabs to spaces
+set expandtab
+
+" indent using 4 spaces when shifting
+set shiftwidth=4
+
+" indent using 4 spaces
+set tabstop=4
+
+" insert 'tabstop' number of spaces when 'tab' key is pressed
+set smarttab
+
+
+" SEARCHING
+" enable search highlighting
+set hlsearch
+
+" ignore case for searching
+set ignorecase
+
+" incremental search that shows partial matches
+set incsearch
+
+" automatically switch to case-sensitive when search query contains uppercase
+set smartcase
+
+
+" PERFORMANCE OPTIONS
+" limit the files searched for auto-completes
+set complete-=i
+
+" don't update screen during macro and script execution
+set lazyredraw
+
+
+" TEXT RENDERING OPTIONS
+" always try to show a paragraph's last line
+set display+=lastline
+
+" use an encoding that supports unicode
+set encoding=utf-8
+
+" avoid wrapping a line in the middle of a word
+set linebreak
+
+" the number of screen lines to keep above and below the cursor
+set scrolloff=2
+
+" the number of screen columns to keep to the left and right of the cursor
+set sidescrolloff=5
+
+" enable syntax highlighting
+syntax enable
+
+" enable line wrapping
+set wrap
+
+
+" USER INTERFACE OPTIONS
+" set color scheme
+" (note- add more to ~/.vim/colors directory and access them by name here)
+" builtin color schemes include:
+" blue, delek, evening, morning, peachpuff, and slate
+" view all installed with `:colorscheme [space] [Ctrl+d]`
+" More color schemes at https://vimcolorschemes.com
+colorscheme slate
+
+" use colors that suit a dark background
+set background=dark
+
+" always display the status bar
+set laststatus=2
+
+" always show the cursor position
+set ruler
+
+" display command line's tab complete options as a menu
+set wildmenu
+
+" max number of tab pages that can be opened from the command line
+set tabpagemax=50
+
+" highlight the line under the cursor
+set cursorline
+
+" show line numbers
+set number
+
+" show line number on the current line and relative numbers on all other lines
+set relativenumber
+
+" disable beep on errors
+" set noerrorbells
+
+" flash the screen instead of beeping on errors
+set visualbell
+
+" enable mouse for scrolling and resizing
+set mouse=a
+
+" set the window's title, reflecting the file currently being edited
+set title
+
+
+" CODE FOLDING OPTIONS
+" fold based on indentation levels
+set foldmethod=indent
+
+" only fold up to the indicated number of nesting levels
+set foldnestmax=3
+
+" disable folding by default
+set nofoldenable
+
+
+" MISC OPTIONS
+" automatically re-read files if unmodified inside vim
+" set autoread
+
+" allow backspacing over indentation, line breaks, and insertion start
+set backspace=indent,eol,start
+
+" directory to store backup files
+set backupdir=~/.cache/vim
+
+" display a confirmation dialog when closing an unsaved file
+set confirm
+
+" directory to store swap files
+set dir=~/.cache/vim
+
+" delete comment characters when joining lines
+set formatoptions+=j
+
+" hide files in the background instead of closing them
+" set hidden
+
+" increase undo limit
+set history=1000
+
+" ignore file's mode lines; use vimrc configurations instead
+set nomodeline
+
+" disable swap files
+" set noswapfile
+
+" interpret octal as decimal when incrementing numbers
+" set nrformats-=octal
+
+" the shell used to execute commands
+" set shell
+
+" enable spellchecking
+" set spell
+
+" ignore files matching these patterns when opening files based on a glob
+" pattern
+set wildignore+=.pyc,.swp
