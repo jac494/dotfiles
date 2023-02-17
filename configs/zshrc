@@ -76,7 +76,8 @@ ZSH_THEME="aussiegeek"
 # shellcheck disable=SC2034
 plugins=(git)
 
-# shellcheck disable=SC1091,SC2086
+# shellcheck disable=SC2086
+# shellcheck source=/dev/null
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -112,4 +113,16 @@ mkch() {
 
 whatsmydistro() {
   uname -r;
+}
+
+py_proj_init() {
+  echo "Creating base python project in $(pwd)";
+  echo "flake8" > requirements.txt;
+  python -m venv venv;
+  # shellcheck source=/dev/null
+  source venv/bin/activate;
+  pip install --upgrade pip;
+  pip install -r requirements.txt;
+  ls -alh;
+  echo "Done";
 }
