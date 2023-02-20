@@ -123,6 +123,8 @@ py_proj_init() {
   source venv/bin/activate;
   pip install --upgrade pip;
   pip install -r requirements.txt;
+  echo "Directory contents:";
   ls -alh;
+  echo "";
   echo "Done";
 }
