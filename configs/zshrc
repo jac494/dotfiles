@@ -128,3 +128,10 @@ py_proj_init() {
   echo "";
   echo "Done";
 }
+
+stopandkillcontainers() {
+  for cid in $(docker ps -aq); do
+    docker stop "${cid}";
+    docker rm "${cid}";
+    done
+}
