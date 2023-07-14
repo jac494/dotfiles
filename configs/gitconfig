@@ -5,3 +5,5 @@
 	show-graph = log --graph --abbrev-commit --pretty=oneline
 [core]
 	editor = vim
+[init]
+	defaultBranch = main
