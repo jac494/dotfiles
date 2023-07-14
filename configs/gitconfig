@@ -1,3 +1,5 @@
 [user]
 	email = drew@blinkingboxes.net
 	name = Drew Conner
+[alias]
+	show-graph = log --graph --abbrev-commit --pretty=oneline
