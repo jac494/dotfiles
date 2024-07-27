@@ -139,4 +139,5 @@ stopandkillcontainers() {
 newghrepo() {
   dirname=basename `pwd`;
   gh repo create ${dirname} --public --source=. --remote=origin;
+  git push --set-upstream origin main;
 }
