@@ -135,3 +135,8 @@ stopandkillcontainers() {
     docker rm "${cid}";
     done
 }
+
+newghrepo() {
+  dirname=basename `pwd`;
+  gh repo create ${dirname} --public --source=. --remote=origin;
+}
