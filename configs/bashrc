@@ -120,3 +120,4 @@ function mkch {
   mkdir $1 && cd $1;
 }
 alias roblox="flatpak run org.vinegarhq.Sober"
+alias kubectl="microk8s kubectl"
